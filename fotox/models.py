@@ -8,8 +8,9 @@ class Foto(models.Model):
     fecha_creacion = models.DateField(auto_created=True)
 
     #para definir el nombre en la bd
-    def __unicode__(self): #este es un metodo de cero parameteos (this)
+    def __str__(self): #este es un metodo de cero parameteos (this)
         return self.nombre
+
 
 
 

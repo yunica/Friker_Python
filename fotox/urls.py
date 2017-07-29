@@ -6,3 +6,4 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^agregar/', views.agregar, name='agregar'),
 ]
+
