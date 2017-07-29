@@ -1,0 +1,18 @@
+
+
+{% extends 'base.html' %}
+
+{% block titulo %} Primer index {% endblock %}
+
+{% block contenido %}
+
+{% if list %}
+{% for i in list %}
+    <h1> {{ i.nombre }}</h1>
+    <h2> {{ i.apellido }}</h2>
+    <h3> {{ i.fecha_creacion }} </h3>
+
+    <p> no jodan pe !</p>
+{% endfor %}
+{% endif %}
+{% endblock %}

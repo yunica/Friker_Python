@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index de fotox</title>
-</head>
-<body>
-    este es el menun principal
+{% extends 'base.html' %}
 
-{% if saludo > 12 %}
-    <p>Este saludo entro y hay una</p>
-    {{ despedida }}
-{% else %}
-    <p>No existe saludo . </p>
-    {{ despedida }}
-{% endif %}
+{% block titulo %} Primer index {% endblock %}
 
-</body>
-</html>
+{% block contenido %}
+
+este es el menun principal
+
+    {% if saludo > 12 %}
+        <p>Este saludo entro y hay una</p>
+        {{ despedida }}
+    {% else %}
+        <p>No existe saludo . </p>
+        {{ despedida }}
+    {% endif %}
+
+    <p> siguiente pag</p>
+    <a href="/fotoxx/listar"> listar</a>
+
+{% endblock %}
+
