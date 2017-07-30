@@ -3,6 +3,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^$', include('FrikerApp.urls')),
-    url(r'^fotoxx/', include('fotox.urls')),
+    url(r'^fotox/', include('fotox.urls'), name='fotox'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -8,6 +8,10 @@
 
 </head>
 <body>
+{% load admin_urls %}
+<a href="{% url 'agregar' %}"> diercto link </a>
+<a href="{% url 'mostrarmuchos' pedido=456131 %}"> Mostrar </a>
+
 {% block contenido %}
 
 {% endblock %}
