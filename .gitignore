@@ -10,7 +10,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-.idea/
 build/
 develop-eggs/
 dist/
@@ -357,4 +356,4 @@ Scripts/__pycache__/
 fotox/__pycache__/
 fotox/migrations/__pycache__/
 /.idea/
-!/.idea/
+

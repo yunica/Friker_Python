@@ -10,4 +10,24 @@
         <button type="submit" class="save btn btn-default">Guardar</button>
     </form>
 
+    <input name="nombre" id="nombre" placeholder="nombr"/> <br>
+    <input name="apellido" id="apellido" placeholder="apell"/> <br>
+    <a id="obj" href="#"> pincha aqui</a>
+    {{ nom }}
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $('#obj').click(function () {
+            console.log('se hizo clicl');
+            $.ajax({
+                data: {'foto': {'nombre': $('#nombre').val(), 'apellido': $('#apellido').val()}},
+                url: '/buscar-ajax/',
+                type: 'get',
+                success: function (resulto) {
+                    console.log(resulto);
+                },
+            });
+        });
+    </script>
 {% endblock %}
